@@ -1,8 +1,8 @@
 {
   "name": "App",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "author": "Ing. Aldair Morales Cuéllar",
+  "homepage": "http://ingmorales.com/",
   "private": true,
   "scripts": {
     "start": "ionic-app-scripts serve",
@@ -34,5 +34,5 @@
     "@ionic/app-scripts": "3.2.1",
     "typescript": "~2.6.2"
   },
-  "description": "An Ionic project"
+  "description": "Aplicación para Asesorías Académicas Edúcate."
 }
