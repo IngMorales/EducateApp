@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 
 import {NosotrosPageModule} from '../pages/nosotros/nosotros.module'; //Importación de la Página
+import {MisionPageModule} from '../pages/mision/mision.module';
+import {VisionPageModule} from '../pages/vision/vision.module';
 
 import { MyApp } from './app.component';
 
@@ -25,7 +27,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    NosotrosPageModule //Página de Nosotros
+    NosotrosPageModule, //Página de Nosotros
+    MisionPageModule,
+    VisionPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
