@@ -19,7 +19,7 @@
     <img src="../../assets/imgs/mision.jpg"/>
 
     <ion-card-content>
-      <ion-card-title>
+      <ion-card-title text-center>
         Misión Asesorías Edúcate
       </ion-card-title>
       <p align="justify">
@@ -28,18 +28,21 @@
       <br>
     </ion-card-content>
 
-    <a ion-item href="https://www.facebook.com/asesoriasacademicaseducate" target="_black" item-centered>
-      <ion-icon name='logo-facebook' color="primary" item-start></ion-icon>
-      Facebook
-    </a>
-    <a ion-item href="https://www.instagram.com/asesoriaseducate" target="_black">
-      <ion-icon name='logo-instagram' color="instagram" item-start></ion-icon>
-      Instragram
-    </a>
-    <a ion-item href="https://www.asesoriaseducate.com" target="_black">
-      <ion-icon name='globe' color="dark" item-start></ion-icon>
-      Web Site
-    </a>
+    <ion-fab top right>
+        <button ion-fab color="danger"><ion-icon name="md-star"></ion-icon></button>
+        <ion-fab-list>
+          <a ion-fab href="https://www.facebook.com/asesoriasacademicaseducate" target="_black">
+            <ion-icon name="logo-facebook" color="primary"></ion-icon>
+          </a>
+          <a ion-fab href="https://www.asesoriaseducate.com" target="_black">
+            <ion-icon name="globe" color="dark"></ion-icon>
+          </a>
+          <a ion-fab href="https://www.instagram.com/asesoriaseducate" target="_black">
+            <ion-icon name="logo-instagram" color="instagram"></ion-icon>
+          </a>
+
+        </ion-fab-list>
+    </ion-fab>
   
   </ion-card>
 </ion-content>

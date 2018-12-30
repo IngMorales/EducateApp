@@ -5,6 +5,8 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import {NosotrosPageModule} from '../pages/nosotros/nosotros.module'; //Importación de la Página
 import {MisionPageModule} from '../pages/mision/mision.module';
 import {VisionPageModule} from '../pages/vision/vision.module';
+import {AdministrativoPageModule} from '../pages/administrativo/administrativo.module';
+import {DocentePageModule} from '../pages/docente/docente.module';
 
 import { MyApp } from './app.component';
 
@@ -29,7 +31,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     IonicModule.forRoot(MyApp),
     NosotrosPageModule, //Página de Nosotros
     MisionPageModule,
-    VisionPageModule
+    VisionPageModule,
+    AdministrativoPageModule,
+    DocentePageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
