@@ -2,11 +2,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 
-import {NosotrosPageModule} from '../pages/nosotros/nosotros.module'; //Importación de la Página
-import {MisionPageModule} from '../pages/mision/mision.module';
-import {VisionPageModule} from '../pages/vision/vision.module';
-import {AdministrativoPageModule} from '../pages/administrativo/administrativo.module';
-import {DocentePageModule} from '../pages/docente/docente.module';
+
 
 import { MyApp } from './app.component';
 
@@ -17,6 +13,16 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+
+import { NosotrosPageModule } from '../pages/nosotros/nosotros.module'; //Importación de la Página
+import { MisionPageModule } from '../pages/mision/mision.module';
+import { VisionPageModule } from '../pages/vision/vision.module';
+import { AdministrativoPageModule } from '../pages/administrativo/administrativo.module';
+import { DocentePageModule } from '../pages/docente/docente.module';
+import { DatosPageModule } from '../pages/datos/datos.module';
+import { CalidadPageModule } from '../pages/calidad/calidad.module';
+import { SemestralPageModule } from '../pages/semestral/semestral.module';
+import { VacacionalPageModule } from '../pages/vacacional/vacacional.module';
 
 @NgModule({
   declarations: [
@@ -33,7 +39,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MisionPageModule,
     VisionPageModule,
     AdministrativoPageModule,
-    DocentePageModule
+    DocentePageModule,
+    DatosPageModule,
+    CalidadPageModule,
+    SemestralPageModule,
+    VacacionalPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
