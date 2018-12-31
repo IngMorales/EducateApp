@@ -23,6 +23,7 @@ import { DatosPageModule } from '../pages/datos/datos.module';
 import { CalidadPageModule } from '../pages/calidad/calidad.module';
 import { SemestralPageModule } from '../pages/semestral/semestral.module';
 import { VacacionalPageModule } from '../pages/vacacional/vacacional.module';
+import { LoginPageModule } from '../pages/login/login.module';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { VacacionalPageModule } from '../pages/vacacional/vacacional.module';
     DatosPageModule,
     CalidadPageModule,
     SemestralPageModule,
-    VacacionalPageModule
+    VacacionalPageModule,
+    LoginPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
