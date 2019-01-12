@@ -24,6 +24,7 @@ import { CalidadPageModule } from '../pages/calidad/calidad.module';
 import { SemestralPageModule } from '../pages/semestral/semestral.module';
 import { VacacionalPageModule } from '../pages/vacacional/vacacional.module';
 import { LoginPageModule } from '../pages/login/login.module';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { LoginPageModule } from '../pages/login/login.module';
     TabsPage
   ],
   providers: [
+    InAppBrowser,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}

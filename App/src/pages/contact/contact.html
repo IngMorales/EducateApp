@@ -9,36 +9,44 @@
 <ion-content>
   <ion-list>
     <ion-list-header>Siguenos en Redes Sociales</ion-list-header>
-
     <ion-item>
-        <ion-icon name="logo-facebook" color="primary" item-start></ion-icon>
-        @asesoriasacademicaseducate
+        <button ion-button block outline round (click)="OpenFacebook()">
+            <ion-icon name="logo-facebook" color="primary" item-start></ion-icon>
+            Facebook
+        </button>
     </ion-item>
-
     <ion-item>
-        <ion-icon name="logo-youtube" color="danger" item-start></ion-icon>
-        Aldair Morales Cuéllar
+        <button ion-button block outline round (click)="OpenYouTube()">
+            <ion-icon name="logo-youtube" color="danger" item-start></ion-icon>
+            YouTube
+        </button>
     </ion-item>
-
     <ion-item>
-        <ion-icon name="logo-instagram" color="instagram" item-start></ion-icon>
-        @asesoriaseducate
+        <button ion-button block outline round (click)="OpenInstagram()">
+            <ion-icon name="logo-instagram" color="instagram" item-start></ion-icon>
+            Instagram
+        </button>
     </ion-item>
-
+    <ion-item>
+        <button ion-button block outline round (click)="OpenGerente()">
+            <ion-icon name="logo-whatsapp" color="whatsapp" item-start></ion-icon>
+            Contacto Gerente
+        </button>
+    </ion-item>
+    <ion-item>
+        <button ion-button block outline round (click)="OpenCoordinador()">
+            <ion-icon name="logo-whatsapp" color="whatsapp" item-start></ion-icon>
+            Contacto Coordinador
+        </button>
+    </ion-item>
+    <!--
     <ion-item>
         <ion-icon name="mail" color="mail" item-start></ion-icon>
         asesoriasacademicaseducate@gmail.com
     </ion-item>
-
-    <button ion-button icon-start full color="danger">
-        <ion-icon name="call"></ion-icon>
-        320 375 7000
-    </button>
-
-    <button ion-button icon-start full color="dark">
-        <ion-icon name="call"></ion-icon>
-        310 319 9146
-    </button>
-
+    -->
   </ion-list>
+  <p align="center">
+      Edúcate App | Versión 1.0
+  </p>
 </ion-content>
