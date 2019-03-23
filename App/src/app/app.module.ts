@@ -25,6 +25,10 @@ import { SemestralPageModule } from '../pages/semestral/semestral.module';
 import { VacacionalPageModule } from '../pages/vacacional/vacacional.module';
 import { LoginPageModule } from '../pages/login/login.module';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { WebPageModule } from '../pages/web/web.module';
+import { AulaPageModule } from '../pages/aula/aula.module';
+import { WebPage } from '../pages/web/web';
+import { AulaPage } from '../pages/aula/aula';
 
 @NgModule({
   declarations: [
@@ -46,6 +50,8 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
     CalidadPageModule,
     SemestralPageModule,
     VacacionalPageModule,
+    WebPageModule,
+    AulaPageModule,
     LoginPageModule
   ],
   bootstrap: [IonicApp],
@@ -54,6 +60,8 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
     AboutPage,
     ContactPage,
     HomePage,
+    WebPage,
+    AulaPage,
     TabsPage
   ],
   providers: [

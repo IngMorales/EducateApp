@@ -1,0 +1,54 @@
+<!--
+  Generated template for the AulaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Aula Virtual Edúcate App</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <img src="assets/imgs/aula.png"/>
+
+    <ion-card-content>
+      <ion-card-title text-center>
+        Aula Virtual Edúcate
+      </ion-card-title>
+      <p align="justify">
+        Gestiona tu conocimiento a través de nuestra <i>Aula Virtual</i>, en donde podrás realizar simulacros y estudiar las temáticas relacionadas a la prueba ICFES Saber 11°.
+      </p>
+      <br>
+
+      <p align="justify">
+        Para acceder desde nuestra App al Aula Virtual, presiona en el botón <i>"Aula Virtual"</i>
+      </p>
+      <br>
+
+    </ion-card-content>
+
+    <ion-fab top right>
+        <button ion-fab color="danger"><ion-icon name="md-star"></ion-icon></button>
+        <ion-fab-list>
+          <a ion-fab href="https://www.facebook.com/asesoriasacademicaseducate" target="_black">
+            <ion-icon name="logo-facebook" color="primary"></ion-icon>
+          </a>
+          <a ion-fab href="https://www.asesoriaseducate.com" target="_black">
+            <ion-icon name="globe" color="dark"></ion-icon>
+          </a>
+          <a ion-fab href="https://www.instagram.com/asesoriaseducate" target="_black">
+            <ion-icon name="logo-instagram" color="instagram"></ion-icon>
+          </a>
+
+        </ion-fab-list>
+    </ion-fab>
+  </ion-card>
+
+  <button ion-button color="danger" class="button-block" (click)="openLink()">Abrir Aula Virtual</button>
+</ion-content>
