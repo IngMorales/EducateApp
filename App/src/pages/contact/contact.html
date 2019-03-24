@@ -7,9 +7,41 @@
 </ion-header>
 
 <ion-content padding>
+    <ion-card>
+        <img src="assets/imgs/contacto.png"/>
+    
+        <ion-card-content>
+            <ion-card-title text-center>
+            Contacto y Redes Edúcate
+            </ion-card-title>
+            <p align="justify">
+            Visita, conoce y siguenos en nuestras Redes Sociales.
+            </p>
+            <br>
+    
+        </ion-card-content>
+    
+        <ion-fab top right>
+            <button ion-fab color="danger"><ion-icon name="menu"></ion-icon></button>
+            <ion-fab-list>
+                <a ion-fab href="https://www.facebook.com/asesoriasacademicaseducate" target="_black">
+                <ion-icon name="logo-facebook" color="primary"></ion-icon>
+                </a>
+                <a ion-fab href="https://www.asesoriaseducate.com" target="_black">
+                <ion-icon name="globe" color="dark"></ion-icon>
+                </a>
+                <a ion-fab href="https://www.instagram.com/asesoriaseducate" target="_black">
+                <ion-icon name="logo-instagram" color="instagram"></ion-icon>
+                </a>
+    
+            </ion-fab-list>
+        </ion-fab>
+    </ion-card>
+
     <button ion-button color="primary" class="button-block" (click)="OpenFacebook()">
         <ion-icon name="logo-facebook">&nbsp;</ion-icon> Facebook
     </button>
+
     <button ion-button color="danger" class="button-block" (click)="OpenYouTube()">
         <ion-icon name="logo-youtube">&nbsp;</ion-icon> YouTube
     </button>
