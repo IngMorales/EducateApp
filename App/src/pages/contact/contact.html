@@ -6,46 +6,26 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <ion-list-header>Siguenos en Redes Sociales</ion-list-header>
-    <ion-item>
-        <button ion-button block outline round (click)="OpenFacebook()">
-            <ion-icon name="logo-facebook" color="primary" item-start></ion-icon>
-            Facebook
-        </button>
-    </ion-item>
-    <ion-item>
-        <button ion-button block outline round (click)="OpenYouTube()">
-            <ion-icon name="logo-youtube" color="danger" item-start></ion-icon>
-            YouTube
-        </button>
-    </ion-item>
-    <ion-item>
-        <button ion-button block outline round (click)="OpenInstagram()">
-            <ion-icon name="logo-instagram" color="instagram" item-start></ion-icon>
-            Instagram
-        </button>
-    </ion-item>
-    <ion-item>
-        <button ion-button block outline round (click)="OpenGerente()">
-            <ion-icon name="logo-whatsapp" color="whatsapp" item-start></ion-icon>
-            Contacto Gerente
-        </button>
-    </ion-item>
-    <ion-item>
-        <button ion-button block outline round (click)="OpenCoordinador()">
-            <ion-icon name="logo-whatsapp" color="whatsapp" item-start></ion-icon>
-            Contacto Coordinador
-        </button>
-    </ion-item>
-    <!--
-    <ion-item>
-        <ion-icon name="mail" color="mail" item-start></ion-icon>
-        asesoriasacademicaseducate@gmail.com
-    </ion-item>
-    -->
-  </ion-list>
+<ion-content padding>
+    <button ion-button color="primary" class="button-block" (click)="OpenFacebook()">
+        <ion-icon name="logo-facebook">&nbsp;</ion-icon> Facebook
+    </button>
+    <button ion-button color="danger" class="button-block" (click)="OpenYouTube()">
+        <ion-icon name="logo-youtube">&nbsp;</ion-icon> YouTube
+    </button>
+
+    <button ion-button color="instagram" class="button-block" (click)="OpenInstagram()">
+        <ion-icon name="logo-instagram">&nbsp;</ion-icon> Instagram
+    </button>
+
+    <button ion-button color="whatsapp" class="button-block" (click)="OpenGerente()">
+        <ion-icon name="logo-whatsapp">&nbsp;</ion-icon> Contacto Gerente
+    </button>
+
+    <button ion-button color="whatsapp" class="button-block" (click)="OpenCoordinador()">
+        <ion-icon name="logo-whatsapp">&nbsp;</ion-icon> Contacto Coordinador
+    </button>
+
   <p align="center">
       Edúcate App | Versión 1.0
   </p>

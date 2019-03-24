@@ -11,23 +11,23 @@ export class ContactPage {
   }
 
   OpenFacebook() {
-      this.iap.create("https://www.facebook.com/asesoriasacademicaseducate/","_system","yes")
+      this.iap.create("https://www.facebook.com/asesoriasacademicaseducate/")
   }
 
   OpenYouTube() {
-    this.iap.create("https://www.youtube.com/channel/UCfO5Z2nBA956aVwnKIrM6sQ?sub_confirmation=1","_system","yes")
+    this.iap.create("https://www.youtube.com/channel/UCfO5Z2nBA956aVwnKIrM6sQ?sub_confirmation=1")
   }
 
   OpenInstagram() {
-    this.iap.create("https://www.instagram.com/asesoriaseducate/?hl=es-la","_system","yes")
+    this.iap.create("https://www.instagram.com/asesoriaseducate/?hl=es-la")
   }
 
   OpenGerente() {
-    this.iap.create("https://api.whatsapp.com/send?phone=573203757000&text=Hola%2C%20deseo%20obtener%20el%20m%C3%A1s%20informaci%C3%B3n%20del%20PreICFES","_system","yes")
+    this.iap.create("https://api.whatsapp.com/send?phone=573203757000&text=Hola%2C%20deseo%20obtener%20el%20m%C3%A1s%20informaci%C3%B3n%20del%20PreICFES")
   }
 
   OpenCoordinador() {
-    this.iap.create("https://api.whatsapp.com/send?phone=573103199146&text=Hola%2C%20deseo%20obtener%20el%20m%C3%A1s%20informaci%C3%B3n%20del%20PreICFES","_system","yes")
+    this.iap.create("https://api.whatsapp.com/send?phone=573103199146&text=Hola%2C%20deseo%20obtener%20el%20m%C3%A1s%20informaci%C3%B3n%20del%20PreICFES")
   }
 
 }
