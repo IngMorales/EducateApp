@@ -40,7 +40,7 @@ export class WebPage {
   }
 */
 
-  private openLink(url: string, title?: string) {
+  private web(url: string, title?: string) {
     let options: InAppBrowserOptions = {
       toolbarcolor: "#488aff",
       hideurlbar: "yes",
@@ -49,6 +49,37 @@ export class WebPage {
     };
     const browser = this.iap.create('https://www.asesoriaseducate.com/', "_blank", options);
   }
+
+  private blog_nacho(url: string, title?: string) {
+    let options: InAppBrowserOptions = {
+      toolbarcolor: "#488aff",
+      hideurlbar: "yes",
+      closebuttoncolor: "#fff",
+      navigationbuttoncolor: "#fff"
+    };
+    const browser = this.iap.create('http://www.pasaralaunacional.com/p/icfes-interactivo.html', "_blank", options);
+  }
+
+  private dipa(url: string, title?: string) {
+    let options: InAppBrowserOptions = {
+      toolbarcolor: "#488aff",
+      hideurlbar: "yes",
+      closebuttoncolor: "#fff",
+      navigationbuttoncolor: "#fff"
+    };
+    const browser = this.iap.create('https://www.uninscripciones.unal.edu.co/dipa/', "_blank", options);
+  }
+
+  private guia_icfes(url: string, title?: string) {
+    let options: InAppBrowserOptions = {
+      toolbarcolor: "#488aff",
+      hideurlbar: "yes",
+      closebuttoncolor: "#fff",
+      navigationbuttoncolor: "#fff"
+    };
+    const browser = this.iap.create('http://www2.icfesinteractivo.gov.co/investigacionFormulario/item/2490-guias-de-orientacion', "_blank", options);
+  }
+  
 
   //this.inAppBrowser.create('http://sco7.com/filemanager/sapphire/','_self',{ toolbar: 'no'});
 }

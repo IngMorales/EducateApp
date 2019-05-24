@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Portal Web Asesorías Edúcate</ion-title>
+    <ion-title>Portal de Ayudas Virtuales de Aprendizaje</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -19,15 +19,15 @@
 
     <ion-card-content>
       <ion-card-title text-center>
-        Portal Web
+        Portal Web y Ayudas Virtuales Educativas
       </ion-card-title>
       <p align="justify">
-        En nuestro portal web encontrará toda la información de Asesorías Académicas Edúcate, podrá ver secciones de noticias e ingresar al <i>Sistema de Información Integrado</i> para poder visualizar información personal y del curso PreICFES Saber 11° de Alto Rendimiento.
+        A través de está página pordrá acceder a diferentes contenidos virtuales que serán de ayuda para tú preparación para la prueba de estado ICFES Saber 11°.
       </p>
       <br>
 
       <p align="justify">
-        Para acceder desde nuestra App al Portal Web, presiona en el botón <i>"Abrir Portal Web"</i>
+        Para acceder desde nuestra App, solo tienes que presionar sobre los botones a continuación.
       </p>
       <br>
 
@@ -50,5 +50,8 @@
     </ion-fab>
   </ion-card>
   
-  <button ion-button color="danger" class="button-block" (click)="openLink()">Abrir Portal Web</button>
+  <button ion-button color="danger" class="button-block" (click)="web()">Abrir Portal Web</button>
+  <button ion-button color="primary" class="button-block" (click)="blog_nacho()">Blog de la Nacho</button>
+  <button ion-button color="whatsapp" class="button-block" (click)="dipa()">Examen Universidad Nacional</button>
+  <button ion-button color="instagram" class="button-block" (click)="guia_icfes()">Guías y Lineamientos ICFES</button>
 </ion-content>
