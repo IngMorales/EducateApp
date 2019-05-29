@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser';
+//import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser';
 
 /**
  * Generated class for the AulaPage page.
@@ -23,8 +24,18 @@ export class AulaPage {
     console.log('ionViewDidLoad AulaPage');
   }
   
-  openLink(){
+  /*openLink(){
     this.iap.create("http://virtual.asesoriaseducate.com/");
+  }*/
+
+  private openLink(url: string, title?: string) {
+    let options: InAppBrowserOptions = {
+      toolbarcolor: "#488aff",
+      hideurlbar: "yes",
+      closebuttoncolor: "#fff",
+      navigationbuttoncolor: "#fff"
+    };
+    const browser = this.iap.create('http://virtual.asesoriaseducate.com', "_blank", options);
   }
 
 }

@@ -21,7 +21,7 @@ export class ContactPage {
   OpenInstagram() {
     this.iap.create("https://www.instagram.com/asesoriaseducate/?hl=es-la")
   }
-
+  /*
   OpenGerente() {
     this.iap.create("https://api.whatsapp.com/send?phone=573203757000&text=Hola%2C%20deseo%20obtener%20el%20m%C3%A1s%20informaci%C3%B3n%20del%20PreICFES")
   }
@@ -29,5 +29,6 @@ export class ContactPage {
   OpenCoordinador() {
     this.iap.create("https://api.whatsapp.com/send?phone=573103199146&text=Hola%2C%20deseo%20obtener%20el%20m%C3%A1s%20informaci%C3%B3n%20del%20PreICFES")
   }
+  */
 
 }

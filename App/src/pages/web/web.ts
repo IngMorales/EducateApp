@@ -47,7 +47,7 @@ export class WebPage {
       closebuttoncolor: "#fff",
       navigationbuttoncolor: "#fff"
     };
-    const browser = this.iap.create('https://www.asesoriaseducate.com/', "_blank", options);
+    this.iap.create('https://www.asesoriaseducate.com/', "_blank", options);
   }
 
   private blog_nacho(url: string, title?: string) {
@@ -57,7 +57,7 @@ export class WebPage {
       closebuttoncolor: "#fff",
       navigationbuttoncolor: "#fff"
     };
-    const browser = this.iap.create('http://www.pasaralaunacional.com/p/icfes-interactivo.html', "_blank", options);
+    this.iap.create('http://www.pasaralaunacional.com/p/icfes-interactivo.html', "_blank", options);
   }
 
   private dipa(url: string, title?: string) {
@@ -67,7 +67,7 @@ export class WebPage {
       closebuttoncolor: "#fff",
       navigationbuttoncolor: "#fff"
     };
-    const browser = this.iap.create('https://www.uninscripciones.unal.edu.co/dipa/', "_blank", options);
+    this.iap.create('https://www.uninscripciones.unal.edu.co/dipa/', "_blank", options);
   }
 
   private guia_icfes(url: string, title?: string) {
@@ -77,7 +77,7 @@ export class WebPage {
       closebuttoncolor: "#fff",
       navigationbuttoncolor: "#fff"
     };
-    const browser = this.iap.create('http://www2.icfesinteractivo.gov.co/investigacionFormulario/item/2490-guias-de-orientacion', "_blank", options);
+    this.iap.create('http://www2.icfesinteractivo.gov.co/investigacionFormulario/item/2490-guias-de-orientacion', "_blank", options);
   }
   
 
