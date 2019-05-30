@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser';
 import { Observable } from 'rxjs';
+import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
 
 /**
  * Generated class for the WebPage page.
@@ -16,7 +17,8 @@ import { Observable } from 'rxjs';
   templateUrl: 'web.html',
 })
 export class WebPage {
-  constructor(public navCtrl: NavController, public navParams: NavParams, private iap: InAppBrowser) {
+  
+  constructor(public navCtrl: NavController, public navParams: NavParams, private iap: InAppBrowser, private youtube: YoutubeVideoPlayer) {
   }
 
   ionViewDidLoad() {
@@ -78,6 +80,9 @@ export class WebPage {
       navigationbuttoncolor: "#fff"
     };
     this.iap.create('http://www2.icfesinteractivo.gov.co/investigacionFormulario/item/2490-guias-de-orientacion', "_blank", options);
+  }
+  watch(video){
+    this.youtube.openVideo(video);
   }
   //this.inAppBrowser.create('http://sco7.com/filemanager/sapphire/','_self',{ toolbar: 'no'});
 }

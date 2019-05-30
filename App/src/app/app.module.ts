@@ -27,6 +27,7 @@ import { WebPageModule } from '../pages/web/web.module';
 import { AulaPageModule } from '../pages/aula/aula.module';
 import { WebPage } from '../pages/web/web';
 import { AulaPage } from '../pages/aula/aula';
+import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
 
 @NgModule({
   declarations: [
@@ -67,6 +68,7 @@ import { AulaPage } from '../pages/aula/aula';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
+    YoutubeVideoPlayer
   ]
 })
 export class AppModule {}
