@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser';
+import { Observable } from 'rxjs';
 
 /**
  * Generated class for the WebPage page.
@@ -15,7 +16,6 @@ import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser'
   templateUrl: 'web.html',
 })
 export class WebPage {
-
   constructor(public navCtrl: NavController, public navParams: NavParams, private iap: InAppBrowser) {
   }
 
@@ -79,7 +79,5 @@ export class WebPage {
     };
     this.iap.create('http://www2.icfesinteractivo.gov.co/investigacionFormulario/item/2490-guias-de-orientacion', "_blank", options);
   }
-  
-
   //this.inAppBrowser.create('http://sco7.com/filemanager/sapphire/','_self',{ toolbar: 'no'});
 }
