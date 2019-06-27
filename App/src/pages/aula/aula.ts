@@ -28,14 +28,15 @@ export class AulaPage {
     this.iap.create("http://virtual.asesoriaseducate.com/");
   }*/
 
-  private openLink(url: string, title?: string) {
-    let options: InAppBrowserOptions = {
+  private openLink(/*url: string, title?: string*/) {
+    /*let options: InAppBrowserOptions = {
       toolbarcolor: "#488aff",
       hideurlbar: "yes",
       closebuttoncolor: "#fff",
       navigationbuttoncolor: "#fff"
-    };
-    const browser = this.iap.create('http://virtual.asesoriaseducate.com', "_blank", options);
+    };*/
+    this.iap.create("http://virtual.asesoriaseducate.com");
+    //const browser = this.iap.create('http://virtual.asesoriaseducate.com', "_blank", options);
   }
 
 }

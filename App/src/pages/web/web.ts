@@ -42,46 +42,52 @@ export class WebPage {
   }
 */
 
-  private web(url: string, title?: string) {
-    let options: InAppBrowserOptions = {
+  private web() {
+    /*let options: InAppBrowserOptions = {
       toolbarcolor: "#488aff",
       hideurlbar: "yes",
       closebuttoncolor: "#fff",
       navigationbuttoncolor: "#fff"
-    };
-    this.iap.create('https://www.asesoriaseducate.com/', "_blank", options);
+    };*/
+    this.iap.create("https://www.asesoriaseducate.com/");
+    //this.iap.create('https://www.asesoriaseducate.com/', "_blank", options);
   }
 
-  private blog_nacho(url: string, title?: string) {
-    let options: InAppBrowserOptions = {
+  private blog_nacho() {
+    /*let options: InAppBrowserOptions = {
       toolbarcolor: "#488aff",
       hideurlbar: "yes",
       closebuttoncolor: "#fff",
       navigationbuttoncolor: "#fff"
-    };
-    this.iap.create('http://www.pasaralaunacional.com/p/icfes-interactivo.html', "_blank", options);
+    };*/
+    this.iap.create("http://www.pasaralaunacional.com/p/icfes-interactivo.html");
+    //this.iap.create('http://www.pasaralaunacional.com/p/icfes-interactivo.html', "_blank", options);
   }
 
-  private dipa(url: string, title?: string) {
-    let options: InAppBrowserOptions = {
+  private dipa() {
+    /*let options: InAppBrowserOptions = {
       toolbarcolor: "#488aff",
       hideurlbar: "yes",
       closebuttoncolor: "#fff",
       navigationbuttoncolor: "#fff"
-    };
-    this.iap.create('https://www.uninscripciones.unal.edu.co/dipa/', "_blank", options);
+    };*/
+    this.iap.create("https://www.uninscripciones.unal.edu.co/dipa/");
+    //this.iap.create('https://www.uninscripciones.unal.edu.co/dipa/', "_blank", options);
   }
 
-  private guia_icfes(url: string, title?: string) {
-    let options: InAppBrowserOptions = {
+  private guia_icfes(/*url: string, title?: string*/) {
+    /*let options: InAppBrowserOptions = {
       toolbarcolor: "#488aff",
       hideurlbar: "yes",
       closebuttoncolor: "#fff",
       navigationbuttoncolor: "#fff"
-    };
-    this.iap.create('http://www2.icfesinteractivo.gov.co/investigacionFormulario/item/2490-guias-de-orientacion', "_blank", options);
+    };*/
+    this.iap.create("http://www2.icfesinteractivo.gov.co/investigacionFormulario/item/2490-guias-de-orientacion");
+    //this.iap.create('http://www2.icfesinteractivo.gov.co/investigacionFormulario/item/2490-guias-de-orientacion', "_blank", options);
   }
+
   watch(video){
+
     this.youtube.openVideo(video);
   }
   //this.inAppBrowser.create('http://sco7.com/filemanager/sapphire/','_self',{ toolbar: 'no'});
